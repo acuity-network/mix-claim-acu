@@ -1,0 +1,20 @@
+{
+  "name": "mix-claim-acu",
+  "version": "1.0.0",
+  "description": "Script to sign a MIX address so that ACU can be claimed.",
+  "scripts": {
+    "start": "ts-node src/main.ts"
+  },
+  "repository": "https://github.com/acuity-social/mix-claim-acu",
+  "author": "Jonathan Brown <jbrown@mix-blockchain.org>",
+  "license": "Apache-2.0",
+  "private": false,
+  "devDependencies": {
+    "@types/node": "^14.6.4"
+  },
+  "dependencies": {
+    "bip32": "^2.0.5",
+    "bip39": "^3.0.2",
+    "web3": "^1.2.11"
+  }
+}
