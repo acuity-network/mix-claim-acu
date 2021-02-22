@@ -8,7 +8,8 @@ async function start() {
   let msg = "Pay ACUs to the Acuity account:"
   let node = bip32.fromSeed(await bip39.mnemonicToSeed(mnemonic))
 
-  let path = "m/44'/76'/0'/0" // coinomi
+  let path = "m/44'/76'/0'/0/" // + 0,1,2,3,etc (ledger)
+//  let path = "m/44'/76'/0'/0" // coinomi
   let privateKey: string = '0x' + node.derivePath(path).privateKey!.toString('hex')
   let account = accounts.privateKeyToAccount(privateKey)
 
